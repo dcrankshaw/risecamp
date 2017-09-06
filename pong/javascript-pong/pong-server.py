@@ -61,7 +61,7 @@ class PongServer(BaseHTTPRequestHandler):
 
     def do_POST(self):
 
-        clipper_url = "http://{}/pong/predict".format(self.server.clipper_addr)
+        clipper_url = "http://{}/predict".format(self.server.clipper_addr)
         content_length = int(self.headers['Content-Length'])
 
         # Stupid workaround because Javascript's JSON.stringify will turn 1.0 into 1, which
