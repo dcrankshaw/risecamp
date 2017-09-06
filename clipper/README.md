@@ -21,7 +21,7 @@ docker run -it --network=host -v /var/run/docker.sock:/var/run/docker.sock -p 88
 
 Explanation of additional args:
 
-+ `--network=host` useallows the Jupyter docker container to access the
++ `--network=host` allows the Jupyter docker container to access the
 Clipper docker containers on `localhost`. 
 + `-v /var/run/docker.sock:/var/run/docker.sock` gives the Jupyter docker container
 access to the Docker daemon so it can launch sibling Docker containers on the host.
